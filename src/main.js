@@ -15,7 +15,7 @@ import { faCheck, faCheckCircle, faInfoCircle, faExclamationTriangle,
     faExclamationCircle, faArrowUp, faAngleRight, faAngleLeft, faAngleDown, faAngleUp,
     faEye, faEyeSlash, faCaretDown, faCaretUp, faUpload, faSearch, faShoppingCart,
     faSortDown, faSortUp, faMobileAlt, faCompactDisc, faHeadphonesAlt, faShoppingBasket,
-    faDatabase, faListAlt, faTicketAlt, faFireAlt, faPowerOff, faMapMarkerAlt
+    faDatabase, faListAlt, faTicketAlt, faFireAlt, faPowerOff, faMapMarkerAlt, faHeadset
 } from "@fortawesome/free-solid-svg-icons";
 import { faWeixin, faQq, faWeibo, faBattleNet } from "@fortawesome/free-brands-svg-icons";
 
@@ -24,7 +24,7 @@ library.add(faCheck, faCheckCircle, faInfoCircle, faExclamationTriangle,
     faExclamationCircle, faArrowUp, faAngleRight, faAngleLeft, faAngleDown, faAngleUp,
     faEye, faEyeSlash, faCaretDown, faCaretUp, faUpload, faSearch, faShoppingCart,
     faSortDown, faSortUp, faMobileAlt, faCompactDisc, faHeadphonesAlt, faShoppingBasket,
-    faDatabase, faListAlt, faTicketAlt, faFireAlt, faPowerOff, faMapMarkerAlt
+    faDatabase, faListAlt, faTicketAlt, faFireAlt, faPowerOff, faMapMarkerAlt, faHeadset
 );
 library.add(faWeixin, faQq, faWeibo, faBattleNet, )
 Vue.component('vue-fontawesome', FontAwesomeIcon);

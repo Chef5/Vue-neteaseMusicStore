@@ -1,6 +1,7 @@
 <template>
   <div class="home">
       <the-swipper></the-swipper>
+      <sideFloatMenu start="601px" fixedTop="30%"></sideFloatMenu>
 <!--      菜单-->
       <div class="menu">
           <div class="menu-container">
@@ -46,10 +47,12 @@
 
 <script>
 import TheSwipper from '../components/theSwipper'
+import sideFloatMenu from '../components/sideFloatMenu'
 export default {
   name: 'home',
   components: {
-    TheSwipper
+      TheSwipper,
+      sideFloatMenu
   }
 }
 </script>
@@ -92,6 +95,7 @@ export default {
         margin: 0 14% 0;
         display: flex;
         flex-direction: column;
+        height: 800px;
         /*background: #42b983;*/
         .hot{
             padding: 40px 0px 40px;

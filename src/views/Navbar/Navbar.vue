@@ -9,8 +9,7 @@
                     <the-search></the-search>
                 </div>
                 <div class="cart">
-                    <b-icon icon="shopping-cart" size="is-large"></b-icon>
-                    <span class="num">3</span>
+                    <shopping-cart></shopping-cart>
                 </div>
                 <div class="person">
                     <the-person></the-person>
@@ -23,11 +22,13 @@
 <script>
     import TheSearch from './components/theSearch'
     import ThePerson from './components/thePerson'
+    import ShoppingCart from '../../components/shoppingCart'
     export default {
         name: "Navbar",
         components: {
             TheSearch,
-            ThePerson
+            ThePerson,
+            ShoppingCart
         }
     }
 </script>
@@ -39,6 +40,7 @@
     .wrapper {
         display: flex;
         flex-direction: row;
+        height: 76px;
         margin: 0 10% 0;
     }
     .logo{
@@ -65,21 +67,7 @@
     .cart{
         position: relative;
     }
-    .num{
-        width: 18px;
-        height: 18px;
-        padding: 2px;
-        font-size: 12px;
-        line-height: 14px;
-        display: inline-block;
-        background-color: #e23b20;
-        color: white;
-        border-radius: 50%;
-        overflow: hidden;
-        position: absolute;
-        top: 1px;
-        right: 1px;
-    }
+
 
     /*登录*/
 
