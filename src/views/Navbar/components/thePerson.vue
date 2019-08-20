@@ -22,7 +22,7 @@
                 <span class="method-text">新浪微博登录</span>
             </b-dropdown-item>
             <b-dropdown-item aria-role="listitem" class="method-item">
-                <b-icon icon="battle-net" pack="fab" custom-class="method-icon"></b-icon>
+                <b-icon icon="compact-disc" custom-class="method-icon"></b-icon>
                 <span class="method-text">网易邮箱账号登录</span>
             </b-dropdown-item>
         </b-dropdown>
@@ -32,23 +32,23 @@
                 <img src="../../../assets/my2.jpg" alt=""><b-icon :icon="sortIcon" custom-class="nav-icon"></b-icon>
             </div>
             <b-dropdown-item aria-role="listitem" class="method-item">
-                <b-icon icon="mobile-alt" custom-class="method-icon"></b-icon>
+                <b-icon icon="list-alt" custom-class="method-icon"></b-icon>
                 <span class="method-text">我的订单</span>
             </b-dropdown-item>
             <b-dropdown-item aria-role="listitem" class="method-item">
-                <b-icon icon="weixin" pack="fab" custom-class="method-icon"></b-icon>
+                <b-icon icon="ticket-alt" custom-class="method-icon"></b-icon>
                 <span class="method-text">我的优惠券</span>
             </b-dropdown-item>
             <b-dropdown-item aria-role="listitem" class="method-item">
-                <b-icon icon="qq" pack="fab" custom-class="method-icon"></b-icon>
+                <b-icon icon="map-marker-alt" custom-class="method-icon"></b-icon>
                 <span class="method-text">我的收货地址</span>
             </b-dropdown-item>
             <b-dropdown-item aria-role="listitem" class="method-item">
-                <b-icon icon="weibo" pack="fab" custom-class="method-icon"></b-icon>
+                <b-icon icon="compact-disc" custom-class="method-icon"></b-icon>
                 <span class="method-text">网易云音乐首页</span>
             </b-dropdown-item>
             <b-dropdown-item aria-role="listitem" class="method-item">
-                <b-icon icon="battle-net" pack="fab" custom-class="method-icon"></b-icon>
+                <b-icon icon="power-off" custom-class="method-icon"></b-icon>
                 <span class="method-text">退出</span>
             </b-dropdown-item>
         </b-dropdown>
