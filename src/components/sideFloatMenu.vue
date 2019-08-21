@@ -53,7 +53,7 @@
         methods: {
             handelScreenScroll () {
                 this.scrollY = document.documentElement.scrollTop || document.body.scrollTop;
-                console.log(this.scrollY)
+                // console.log(this.scrollY)
             }
         },
         mounted () {
