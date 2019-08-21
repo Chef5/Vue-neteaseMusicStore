@@ -15,11 +15,9 @@
                 <div style="margin-top: -10px">客服</div>
             </a>
         </div>
-        <div class="sfm-item-top" v-if="isShowToTop">
-            <a href="#">
-                <b-icon icon="angle-up" size="is-normal" style="margin-top: -5px"></b-icon>
-                <div style="margin-top: -14px">TOP</div>
-            </a>
+        <div class="sfm-item-top" v-if="isShowToTop" @click="handleToTop">
+            <b-icon icon="angle-up" size="is-normal" style="margin-top: -5px"></b-icon>
+            <div style="margin-top: -14px">TOP</div>
         </div>
     </div>
 </template>
@@ -51,13 +49,24 @@
             }
         },
         methods: {
-            handelScreenScroll () {
+            handleScreenScroll () {
                 this.scrollY = document.documentElement.scrollTop || document.body.scrollTop;
                 // console.log(this.scrollY)
+            },
+            handleToTop () {
+                let distance = document.documentElement.scrollTop || document.body.scrollTop; 
+                let step = distance/12; //每步的距离
+                (function jump(){
+                    if(distance > 0){
+                        distance-=step;
+                        window.scrollTo(0,distance);
+                        setTimeout(jump,10)
+                    }
+                })();
             }
         },
         mounted () {
-            window.addEventListener('scroll', this.handelScreenScroll)
+            window.addEventListener('scroll', this.handleScreenScroll)
         },
         created () {
             if (this.start != ""){
@@ -137,10 +146,8 @@
             background: #484848;
             border: 1px solid #565656;
             border-top: none;
-            a {
-                display: block;
-                color: white;
-            }
+            color: white;
+            cursor: pointer;
         }
     }
 </style>
