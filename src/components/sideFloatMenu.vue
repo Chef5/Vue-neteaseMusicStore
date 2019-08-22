@@ -36,7 +36,7 @@
             },
             fixedTop: {
                 type: String,
-                default: ""
+                default: "30%"
             }
         },
         data () {
@@ -54,7 +54,7 @@
                 // console.log(this.scrollY)
             },
             handleToTop () {
-                let distance = document.documentElement.scrollTop || document.body.scrollTop; 
+                let distance = document.documentElement.scrollTop || document.body.scrollTop;
                 let step = distance/12; //每步的距离
                 (function jump(){
                     if(distance > 0){

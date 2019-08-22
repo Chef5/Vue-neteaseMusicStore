@@ -42,6 +42,7 @@
         flex-direction: row;
         height: 76px;
         margin: 0 10% 0;
+        /*border-bottom: 1px solid rgb(83, 82, 87);*/
     }
     .logo{
         width: 290px;
